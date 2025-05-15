@@ -1,0 +1,44 @@
+I want you to help me build a high-level automated trading bot for the Solana blockchain with the following detailed requirements:
+
+1. Token Discovery & Trending Analysis  
+- Automatically fetch new tokens and trending coins from multiple sources via API (GMGN, DexScreener, Pump.fun, Reddit via Pushshift API, Twitter API, Telegram groups).  
+- Analyze social media sentiment and narratives to detect hot trends related to tokens.  
+- Track trending microcap tokens with Market Cap between $5,000 and $1,500,000.
+
+2. Filtering & Scam Detection  
+- Filter tokens by daily volume and market cap.  
+- Automatically detect potential scams, rug pulls, honeypots by analyzing smart contracts and known scam lists.  
+- Implement automated contract analysis for suspicious patterns and blacklist filtering.
+
+3. Smart Wallet Tracking  
+- Maintain and update a list of "smart wallets" (highly successful traders).  
+- Track their transactions in real-time and auto-copy their buys with notifications.  
+- Send alerts via Telegram and email when these wallets buy new tokens.
+
+4. Trading Strategy  
+- Invest a fixed amount per trade (default $100, adjustable on the fly).  
+- Set Take Profit (TP) at 50-60% gain, Stop Loss (SL) at 20% loss.  
+- Automatically buy tokens identified from the trending list and smart wallet activity.  
+- Monitor positions to exit on TP or SL, then reinvest profits into next opportunities continuously.
+
+5. Machine Learning & Adaptive Decisions  
+- Use ML models to analyze trading data and improve buy/sell decision accuracy.  
+- Learn from past trades to optimize future trades dynamically.
+
+6. Reporting & Notifications  
+- Generate daily Excel reports with detailed trade results, ROI, graphs, and success rates.  
+- Send email reports automatically.  
+- Provide Telegram notifications for trade execution, scam detection, and wallet alerts.
+
+7. Technical Requirements  
+- Support running on Google Colab, Android Termux, and Windows environments using Python 3.8+.  
+- Secure handling of private keys and API keys.  
+- Modular and well-commented code for easy updates and expansions.  
+- Handle API rate limits, network errors, and retries gracefully.
+
+8. Bonus  
+- Include unit tests or automated sanity checks to validate that the bot works correctly before live trading.  
+- Provide sample scripts or notebooks to demonstrate usage and setup.
+
+Please provide the complete codebase fulfilling all the above requirements, with clear instructions on setup, configuration, and usage.  
+Make sure the code is clean, modular, and follows professional coding standards.
